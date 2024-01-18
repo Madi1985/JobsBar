@@ -354,5 +354,50 @@ body {
 .lightning_image {
   position: absolute;
   left: 500px;
-  bottom: 1;
+  bottom: 0;
+}
+
+/* ------------------------------------------------*/
+
+.footer {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 24px 16px 16px;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 32px 32px 0px 0px;
+	/*gap: 32px;*/
+}
+
+.active_btn {
+	background-color: #081E341F;
+	border: 0;
+	padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	border-radius: 100px;
+}
+
+.menu1 {
+ width: 372px;
+ height: 38px;
+ gap: 16px;
+ justify-content: space-between;
+	align-items: center;
+}
+
+.menu2 {
+	width: 803px;
+	height: 38px;
+	gap: 16px;
+	
+}
+
+.nfactorial {
+	padding-top: 103px;
+	padding-right: 80px;
+	justify-content: flex-end;
+	align-items: flex-end;
 }
