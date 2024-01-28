@@ -17,7 +17,6 @@ body {
 	align-items: center;
 	padding-left: 80px;
 	padding-right: 80px;
-	background-color: yellow;
 }
 
 .not_active {
@@ -37,14 +36,15 @@ body {
 
 /*-------------------------------------------------*/
 
-.conteiner{
+.container{
 	margin: 10px;
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	display: flex;
 	gap: 165px;
-	background-color: red;
+	flex-direction: row;
+	background-color: blue;
 }
 
 .main_text {
@@ -110,6 +110,7 @@ body {
 	background-color: rgba(225, 222, 231, 1);
 	border-radius: 32px;
 	text-align: center;
+	background-color: yellow;
 }
 
 .intro {
@@ -133,8 +134,6 @@ body {
 	font-size: 50px;
 }
 
-/* ----------------------------------------------------------------*/
-
 .frame {
 	display: flex;
 	padding-top: 86px;
@@ -142,6 +141,7 @@ body {
 	align-items: space-around;
 	justify-content: space-around;
 	text-align: start;
+	flex-direction: row;
 }
 
 .icon1 {
@@ -223,13 +223,10 @@ body {
 	gap: 86px;
 	flex-direction: column;
 	justify-content: start;
-	background-color: red;
+	background-color: blue;
 }
 
 .info {
-	/*display: inline-block;*/
-  /*max-width: max-content;*/
-	
 	padding-left: 80px;
 	padding-right: 603px;
   height: 84px;
@@ -240,12 +237,20 @@ body {
 }
 
 .main_text2 {
+	padding-left: 80px;
+	width: 495px;
+	height: 64px;
 	text-align: start;
 	font-weight:700;
 	font-size: 54px;
+	padding-right: 80px;
 }
 
 .discription_text3 {
+	padding-top: 32px;
+	padding-left: 80px;
+	width: 495px;
+	height: 44px;
 	font-weight: 500px;
 	font-size: 16px;
 }
@@ -258,38 +263,40 @@ body {
 	padding: 16px 24px 16px 24px;
 	font-size: 14px;
 	font-weight: 500;
-	width: 144px;
-	height: 50px;
 }
 
 .Search_box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 80px;
+	padding-top: 32px;
 	margin: 20px;
 	width: 757px;
 	height: 50px;
 	padding: 13px 75px 13px 13px;
-	background: linear-gradient(0deg, #E1DEE7, #E1DEE7),
-	linear-gradient(0deg, #FFFFFF, #FFFFFF);
-
 }
 
 .searchplace {
 	border-radius: 12px;
-	margin: 00px;
+	/* margin: 00px; */
 	width: 619px;
 	height: 50px;
-	border: 1px;
 	border: 1px solid rgba(225, 222, 231, 1);
-	
 }
 
-.Search{
+.Search {
 	width: 24px;
 	height: 24px;
-	padding-top: 13px;
-	padding-left: 13px;
 	opacity: 20%;
-	justify-content: flex-start;
-	
+}
+
+.placeholder {
+	width: 495px;
+	height: 22px;
+	padding-top: 14px;
+	padding-left: 49px;
+	opacity: 20%;
 }
 
 /* -------------------------------------------------------------------------*/
@@ -301,7 +308,8 @@ body {
 	padding-bottom: 100px;
 	display: flex;
 	gap: 128px;
-	background-color:rgb(0, 255, 191);
+	background-repeat: no-repeat;
+	background-color: green;
 }
 
 .CV_text {
@@ -327,6 +335,7 @@ body {
 }
 
 .left_content2 {
+	padding-left: 80px;
 	width: 100%;
   height: 458px;
   background-repeat: no-repeat;
@@ -346,17 +355,6 @@ body {
 	border-radius: 50px;
 }
 
-.star_image {
-	left: 250px;
-	position: absolute;
-}
-
-.lightning_image {
-  position: absolute;
-  left: 500px;
-  bottom: 0;
-}
-
 /* ------------------------------------------------*/
 
 .footer {
@@ -367,37 +365,409 @@ body {
 	padding: 16px 24px 16px 16px;
 	background: rgba(255, 255, 255, 1);
 	border-radius: 32px 32px 0px 0px;
-	/*gap: 32px;*/
-}
-
-.active_btn {
-	background-color: #081E341F;
-	border: 0;
-	padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-	border-radius: 100px;
+	/*background-color: blue;*/
 }
 
 .menu1 {
+ display: flex;
+ padding-left: 80px;
  width: 372px;
  height: 38px;
- gap: 16px;
+ 
  justify-content: space-between;
-	align-items: center;
+ align-items: flex-start;
+}
+
+.active_btn {
+	/*background-color: #081E341F;*/
+	padding-left: 80px;
+	width: 64px;
+	height: 38px;
+	border-radius: 100px;
+	border: 0;
+	padding: 10px 12px 10px 12px;
+	border-radius: 100px;
+}
+
+.active_btn2 {
+	/*background-color: #081E341F;*/
+	padding-left: 85px;
+	width: 38px;
+	height: 38px;
+	border-radius: 100px;
+	border: 0;
+	padding: 10px 12px 10px 12px;
+	gap: 8px;
+}
+
+.active_btn3 {
+	/*background-color: #081E341F;*/
+	width: 111px;
+	height: 38px;
+	border: 0;
+	padding: 10px 12px 10px 12px;
+	border-radius: 100px;
+}
+
+.twitter{
+	padding-left: 16px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 24px;
+	height: 24px;
+}
+
+.insta{
+	padding-left: 16px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 24px;
+	height: 24px;
 }
 
 .menu2 {
+	margin-left: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
 	width: 803px;
 	height: 38px;
 	gap: 16px;
-	
 }
 
 .nfactorial {
+	width: 272px;
+	height: 38px;
 	padding-top: 103px;
 	padding-right: 80px;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
+
+/*  ------------------------------ медиа контент ----------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+	.header{
+		padding: 12px 24px 12px 24px;
+		width: 360px;
+		height: 62px;
+		gap: 92px;
+	}
+	.left_header p {
+		font-size: 16px; 
+	}
+	.not_active {
+		display: none;
+	}
+	.active {
+		background-color: #081E341F;
+		border: 0;
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 100px;
+	}
+
+	.container{  /* 2ой блок */
+		margin: 10px;
+		width: 360px;
+		height: 618px;
+		padding: 64px 24px 64px 24px;
+		display: flex;
+		gap: 54px;
+		justify-content: center;
+		flex-direction: column-reverse;
+		background-color: blue;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	.main_image {
+		width: 312px;
+		height: 210px;
+		border-radius: 24px;
+	}
+	
+	.dollar_image {
+		left: 100px;
+		position: absolute;
+		padding-top: 11px;
+		width: 73px;
+		height: 94px;
+	}
+	
+	.fire_image {
+		left: 301px;
+		position: absolute; 	
+		bottom: 0;
+		padding-top: 105px;
+		width: 85px;
+		height: 99px;
+	}
+
+	.howitworks { /* 3 блок */
+		
+		padding: 54px 24px 54px 24px;
+		gap: 54px;
+		width: 360px;
+		height: 686px;
+		flex-direction: column;
+		justify-content: start;
+		background-color: rgba(225, 222, 231, 1);
+		border-radius: 32px;
+		text-align: center;
+		background-color: yellow;
+	}
+
+	.frame {
+		display: flex;
+		width: 312px;
+		height: 440px;
+		padding-top: 86px;
+		padding-bottom: 20px;
+		align-items: space-around;
+		justify-content: space-around;
+		text-align: start;
+		flex-direction: column;
+	}
+
+	.inputFiled {   /* 4 блок */
+		margin: 5px;
+		width: 360px;
+		height: 387px;
+		padding-top: 100px;
+		padding: 54px 24px 54px 24px;
+		display: flex;
+		gap: 86px;
+		flex-direction: column;
+		justify-content: center;
+		background-color: blue;
+	}
+
+	.info {
+		width: 312px;
+		height: 279px;
+		flex-direction: column;
+		justify-content: start;
+		align-items: flex-start;
+	}
+	.main_text2 {
+		width: 312px;
+		height: 29px;
+		text-align: center;
+		font-weight:700;
+		font-size: 24px;
+		line-height: 28.8px;
+	}
+	
+	.discription_text3 {
+		padding-top: 32px;
+		width: 312px;
+		height: 54px;
+		font-weight: 500px;
+		font-size: 14px;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.findjob_btn {
+		background-color: #712fff;
+		color: white;
+		border-radius: 100px;
+		border: 0;
+		padding: 16px 24px 16px 24px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	
+	.Search_box {
+		/* display: flex; */
+		align-items: center;
+		flex-direction: column;
+		justify-content: column;
+		padding-top: 32px;
+		/* margin: 20px; */
+		width: 312px;
+		height: 132px;
+	}
+	
+	.searchplace {
+		border-radius: 12px;
+		/* margin: 00px; */
+		width: 312px;
+		height: 50px;
+		border: 1px solid rgba(225, 222, 231, 1);
+	}
+	
+	.Search {
+		width: 24px;
+		height: 24px;
+		padding-top: 13px;
+		padding-left: 13px;
+		opacity: 20%;
+	}
+	
+	.placeholder {
+		width: 495px;
+		height: 22px;
+		padding-top: 14px;
+		padding-left: 49px;
+		opacity: 20%;
+	}
+
+	.cvsubmission{ /* 5 блок */
+		/* margin: 10px; */
+		width: 360px;
+		height: 663;
+		padding: 64px 24px 64px 24px;
+		/* display: flex; */
+		gap: 128px;
+		flex-direction: column;
+		justify-content: center;
+		background-color: green;
+	}
+
+	.left_content2 {
+		width: 312px;
+		height: 210px;
+		border-radius: 24px;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.main_image2 {
+		width: 312px;
+		height: 210px;
+		border-radius: 24px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.right_content2 {
+		display: flex;
+		gap: 48px;
+		padding-left: 80px;
+	}
+	
+	.CV_text {
+		width: 174px;
+		height: 29px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 28.8px;
+		align-items: center;
+	}
+	
+	.discription_text4 {
+		width: 312px;
+		height: 54px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 18px;
+
+	}
+	
+	.upload_btn {
+		background-color: #712fff;
+		color: white;
+		border-radius: 100px;
+		border: 0;
+		padding: 16px 24px 16px 16px;
+		width: 114px;
+		height: 50px;
+		align-items: flex-start;
+	}
+
+	.footer {    /* 6 блок -------------*/
+		/* display: flex; */
+		width: 360px;
+		height: 460px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		padding: 32px 24px 32px 24px;
+		background: rgba(255, 255, 255, 1);
+		border-radius: 32px 32px 0px 0px;
+		/*background-color: blue;*/
+	}
+	
+	.menu1 {
+	 display: flex;
+	 padding-left: 80px;
+	 width: 372px;
+	 height: 38px;
+	 justify-content: flex-start;
+	 align-items: flex-start;
+	 flex-direction: column;
+	}
+	
+	.active_btn {
+		padding-left: 80px;
+		width: 64px;
+		height: 38px;
+		border-radius: 100px;
+		border: 0;
+		padding: 10px 12px 10px 12px;
+		border-radius: 100px;
+	}
+	
+	.active_btn2 {
+		padding-left: 85px;
+		width: 38px;
+		height: 38px;
+		border-radius: 100px;
+		border: 0;
+		padding: 10px 12px 10px 12px;
+		gap: 8px;
+	}
+	
+	.active_btn3 {
+		width: 111px;
+		height: 38px;
+		border: 0;
+		padding: 10px 12px 10px 12px;
+		border-radius: 100px;
+	}
+	
+	.twitter{
+		padding-left: 16px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		width: 24px;
+		height: 24px;
+	}
+	
+	.insta{
+		padding-left: 16px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		width: 24px;
+		height: 24px;
+	}
+	
+	.menu2 {
+		margin-left: auto;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		width: 803px;
+		height: 38px;
+		gap: 16px;
+		flex-direction: column;
+
+	}
+	
+	.nfactorial {
+		width: 272px;
+		height: 38px;
+		padding-top: 103px;
+		padding-right: 80px;
+		justify-content: flex-start;
+		align-items: flex-end;
+		flex-direction: column;
+
+	}
+
+} 
